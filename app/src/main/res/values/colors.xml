@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand & Theme Colors -->
+    <color name="navy_900">#0F172A</color>
+    <color name="navy_800">#1E293B</color>
+    <color name="navy_700">#334155</color>
+
+    <color name="blue_600">#2563EB</color>
+    <color name="blue_700">#1D4ED8</color>
+    <color name="blue_50">#EFF6FF</color>
+
+    <color name="teal_600">#0D9488</color>
+    <color name="teal_700">#0F766E</color>
+    <color name="teal_50">#F0FDFA</color>
+
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="border_light">#E2E8F0</color>
+
+    <!-- Status Colors -->
+    <color name="pass_green">#16A34A</color>
+    <color name="pass_green_bg">#DCFCE7</color>
+
+    <color name="issue_red">#DC2626</color>
+    <color name="issue_red_bg">#FEE2E2</color>
+
+    <color name="warning_amber">#D97706</color>
+    <color name="warning_amber_bg">#FEF3C7</color>
+
+    <color name="neutral_slate">#64748B</color>
+    <color name="neutral_slate_bg">#F1F5F9</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#94A3B8</color>
+</resources>

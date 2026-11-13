@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/surface_card"
+    app:strokeColor="@color/border_light"
+    app:strokeWidth="1dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Top Header: Severity Badge & Status Badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/tvFindingSeverityBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_issue"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="HIGH SEVERITY"
+                android:textColor="@color/issue_red"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFindingSiteName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Accra Central Data Center"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFindingStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_warning"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="IN PROGRESS"
+                android:textColor="@color/warning_amber"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Finding Title -->
+        <TextView
+            android:id="@+id/tvFindingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Exit Panic Hardware Lock Stiff"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvFindingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The mechanical latch on emergency exit Door B-2 in Data Hall 1 binds during manual egress test."
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Recommended Action Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8FAFC"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECOMMENDED ACTION:"
+                android:textColor="@color/teal_600"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFindingRecommendedAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubricate mechanical linkage and recalibrate door strike plate within 48 hours."
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Metadata Row: Assigned Team & Due Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvFindingAssignedTeam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Team: Facilities &amp; Maintenance"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvFindingDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due: 28/10/2024"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Resolution Notes if resolved -->
+        <TextView
+            android:id="@+id/tvResolutionNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_pass"
+            android:padding="8dp"
+            android:text="Resolution Notes: Strike plate re-aligned and tested functional."
+            android:textColor="@color/pass_green"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Update Status Action Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdateFindingStatus"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Update Status / Add Resolution Photo"
+            android:textColor="@color/navy_900"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
